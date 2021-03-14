@@ -12,6 +12,8 @@ ADD ./requirements.txt ./requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+ENV DEBUG=false
+
 COPY . .
 
 CMD [ "uwsgi", "--ini", "uwsgi.ini" ]
