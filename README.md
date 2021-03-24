@@ -22,3 +22,5 @@ docker run --rm -p 8000:8000 logstoneducation/sql-injection:0.0.1
    1. `SELECT name FROM orders_item WHERE name LIKE '%z' UNION SELECT password FROM auth_user WHERE first_name LIKE '%'`
 
 Now we can take these and pass them to a password cracker like [JTR](https://en.wikipedia.org/wiki/John_the_Ripper).
+
+adding a test line just for learning purposes.
